@@ -1,0 +1,6 @@
+<app-profile-row [proposal]="profile"></app-profile-row>
+<div class="margin-bottom-16"><b>Freundesvorschläge</b></div>
+
+@for (singleProposal of proposals; let i = $index; track singleProposal) {
+<app-profile-row [proposal]="singleProposal"></app-profile-row>
+}

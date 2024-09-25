@@ -8,5 +8,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './hamster-card.component.scss'
 })
 export class HamsterCardComponent {
-  @Input() post: any = '';
+  @Input() post: any = 
+  {
+    text: 'Hallo, mein Name ist Felix. Ich bin hier, um neue Freunde zu treffen!',
+    img: 'assets/img/hamster/hamster-1.jpg'
+  };
 }

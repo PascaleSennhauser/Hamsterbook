@@ -1,9 +1,13 @@
 <app-header></app-header>
 
-<div class="container">
-  @for (singlePost of hamsterPosts; track singlePost) {
-    <app-hamster-card [post]="singlePost"></app-hamster-card>
-  }
+<div class="flexrow">
+  <div class="container">
+    @for (singlePost of hamsterPosts; track singlePost) {
+      <app-hamster-card [post]="singlePost"></app-hamster-card>
+    }
+  </div>
+  <app-proposals></app-proposals>
 </div>
+
 
 <router-outlet></router-outlet>
