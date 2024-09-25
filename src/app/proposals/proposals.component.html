@@ -1,6 +1,8 @@
-<app-profile-row [proposal]="profile"></app-profile-row>
+<app-profile-row [proposal]="profile" [follow]="false"></app-profile-row>
 <div class="margin-bottom-16"><b>Freundesvorschläge</b></div>
 
-@for (singleProposal of proposals; let i = $index; track singleProposal) {
-<app-profile-row [proposal]="singleProposal"></app-profile-row>
+@for (singleProposal of pr.proposals; let i = $index; track singleProposal) {
+    @if (i < 3) {
+        <app-profile-row [proposal]="singleProposal" [index]="i"></app-profile-row>
+    }
 }

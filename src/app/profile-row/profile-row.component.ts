@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { FriendService } from '../friend.service';
 
 @Component({
   selector: 'app-profile-row',
@@ -14,4 +15,7 @@ export class ProfileRowComponent {
     age: '1 Jahr alt',
     img: 'assets/img/hamster/hamster-1.jpg'
   };
+  @Input() index:number = 0;
+  @Input() follow: boolean = true;
+  fs = inject(FriendService);
 }

@@ -1,6 +1,7 @@
 .friendrow {
     display: flex;
     gap: 16px;
+    overflow-y: auto;
 }
 
 .friend {

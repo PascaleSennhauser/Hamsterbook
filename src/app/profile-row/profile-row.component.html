@@ -4,5 +4,7 @@
         <b>{{ proposal.name }}</b><br>
         <span class="description">{{ proposal.age }}</span>
     </div>
-    <a href="#">Folgen</a>
+    @if (follow === true) {
+        <a href="#" (click)="fs.addFriend(proposal.name, proposal.img, index)">Folgen</a>
+    }
 </div>

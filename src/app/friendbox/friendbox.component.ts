@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { FriendService } from '../friend.service';
 
 @Component({
   selector: 'app-friendbox',
@@ -8,15 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './friendbox.component.scss'
 })
 export class FriendboxComponent {
-  friends: any = [
-    {
-      name: 'Lea',
-      img: 'assets/img/hamster/hamster-2.jpg'
-    },
-    {
-      name: 'Tom',
-      img: 'assets/img/hamster/hamster-4.jpg'
-    }
-  ]
+  fs = inject(FriendService);
 
 }

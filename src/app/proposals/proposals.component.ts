@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ProfileRowComponent } from '../profile-row/profile-row.component';
+import { FriendService } from '../friend.service';
 
 @Component({
   selector: 'app-proposals',
@@ -9,26 +10,11 @@ import { ProfileRowComponent } from '../profile-row/profile-row.component';
   styleUrl: './proposals.component.scss'
 })
 export class ProposalsComponent {
+  pr = inject(FriendService);
   profile: any =     {
     name: 'Felix',
     age: '1 Jahr alt',
     img: 'assets/img/hamster/hamster-1.jpg'
   };
-  proposals: any = [
-    {
-      name: 'Tim',
-      age: '1 Jahr alt',
-      img: 'assets/img/hamster/hamster-2.jpg'
-    },
-    {
-      name: 'Ben',
-      age: '2 Jahre alt',
-      img: 'assets/img/hamster/hamster-3.jpg'
-    },
-    {
-      name: 'Maya',
-      age: '1.5 Jahre alt',
-      img: 'assets/img/hamster/hamster-4.jpg'
-    }
-  ]
+
 }
