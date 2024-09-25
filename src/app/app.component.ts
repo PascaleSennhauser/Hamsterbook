@@ -12,7 +12,25 @@ import { HamsterCardComponent } from "./hamster-card/hamster-card.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'hamsterbook';
+  hamsterPosts = [
+    {
+      text: 'Hallo, mein Name ist Felix. Ich bin hier, um neue Freunde zu treffen!',
+      img: 'assets/img/hamster/hamster-1.jpg'
+    },
+    {
+      text: 'Hallo zusammen. Freut mich, dass ihr hier seid.',
+      img: 'assets/img/hamster/hamster-2.jpg'
+    },
+    {
+      text: 'Hey, ich esse gerne Körner.',
+      img: 'assets/img/hamster/hamster-3.jpg'
+    },
+    {
+      text: 'Hello, my name is Maya.',
+      img: 'assets/img/hamster/hamster-4.jpg'
+    }
+  ];
+
 
   buttonClicked() {
     alert('Hallo, wie geht es dir?');

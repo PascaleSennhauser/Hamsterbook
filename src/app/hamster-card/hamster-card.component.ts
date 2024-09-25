@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hamster-card',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './hamster-card.component.scss'
 })
 export class HamsterCardComponent {
-
+  @Input() post: any = '';
 }

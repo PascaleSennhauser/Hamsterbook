@@ -1,7 +1,9 @@
 <app-header></app-header>
 
 <div class="container">
-  <app-hamster-card></app-hamster-card>
+  @for (singlePost of hamsterPosts; track singlePost) {
+    <app-hamster-card [post]="singlePost"></app-hamster-card>
+  }
 </div>
 
 <router-outlet></router-outlet>
