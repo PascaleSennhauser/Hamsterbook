@@ -24,6 +24,9 @@
   border: unset;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card button:first-child {
@@ -37,4 +40,11 @@
 
 .card button:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card button mat-icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

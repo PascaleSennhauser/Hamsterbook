@@ -24,6 +24,9 @@
         border: unset;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:first-child {
             left: 0;
@@ -36,6 +39,13 @@
 
         &:hover {
             background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        mat-icon {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
