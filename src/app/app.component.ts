@@ -5,11 +5,12 @@ import { HeaderComponent } from "./header/header.component";
 import { HamsterCardComponent } from "./hamster-card/hamster-card.component";
 import { ProposalsComponent } from "./proposals/proposals.component";
 import { ProfileRowComponent } from "./profile-row/profile-row.component";
+import { FriendboxComponent } from "./friendbox/friendbox.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, HamsterCardComponent, ProposalsComponent, ProfileRowComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, HamsterCardComponent, ProposalsComponent, ProfileRowComponent, FriendboxComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

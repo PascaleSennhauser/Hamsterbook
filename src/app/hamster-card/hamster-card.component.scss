@@ -1,9 +1,6 @@
 .card {
     min-height: 550px;
-    background-color: white;
-    width: 400px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
+
     overflow: hidden;
     position: relative;
 
@@ -25,7 +22,7 @@
         height: 32px;
         background-color: white;
         border: unset;
-        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
 
         &:first-child {
@@ -34,7 +31,7 @@
 
         &:last-child {
             right: 0;
-            border-left: 1px solid rgba(0, 0, 0, 0.3);
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         &:hover {

@@ -11,9 +11,23 @@
         margin-right: 16px;
     }
 
+    .name {
+        width: 140px;
+    }
+
     .description {
         color: rgba(0, 0, 0, 0.5);
         font-size: 12px;
     }
 
+    a {
+        font-size: 12px;
+        color: blue;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

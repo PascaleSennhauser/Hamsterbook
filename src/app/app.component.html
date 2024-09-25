@@ -2,6 +2,7 @@
 
 <div class="flexrow">
   <div class="container">
+    <app-friendbox></app-friendbox>
     @for (singlePost of hamsterPosts; track singlePost) {
       <app-hamster-card [post]="singlePost"></app-hamster-card>
     }

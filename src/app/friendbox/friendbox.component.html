@@ -1,1 +1,8 @@
-<p>friendbox works!</p>
+<div class="standard-card padding-16 friendrow">
+    @for (singleFriend of friends; track singleFriend) {
+    <div class="friend">
+        <img src="{{ singleFriend.img }}">
+        <b>{{ singleFriend.name }}</b>
+    </div>
+    }
+</div>

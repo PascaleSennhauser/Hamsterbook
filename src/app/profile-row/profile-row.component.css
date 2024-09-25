@@ -12,7 +12,22 @@
   margin-right: 16px;
 }
 
+.profile-row .name {
+  width: 140px;
+}
+
 .profile-row .description {
   color: rgba(0, 0, 0, 0.5);
   font-size: 12px;
+}
+
+.profile-row a {
+  font-size: 12px;
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.profile-row a:hover {
+  text-decoration: underline;
 }
