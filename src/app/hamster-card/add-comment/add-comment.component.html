@@ -1,8 +1,9 @@
 <div class="background-container">
     <mat-icon fontIcon="close" (click)="closeAddComment()"></mat-icon>
-    <form>
-        <textarea></textarea>
-        <button>Comment</button>
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <textarea #message="ngModel" [(ngModel)]="comment" name="message" minlength="2" maxlength="500"
+            placeholder="Please enter your comment here. Max-signs: 500." required=""></textarea>
+        <button type="submit" value="Submit" [disabled]="contactForm.invalid">Comment</button>
     </form>
 
 </div>

@@ -59,9 +59,30 @@ export class FriendService {
       age: '3 Jahre alt',
       img: 'assets/img/hamster/hamster-1.jpg'
     }
-  ]
+  ];
+  hamsterPosts = [
+    {
+      img: 'assets/img/hamster/hamster-1.jpg',
+      posts: ['Hallo, mein Name ist Felix. Ich bin hier, um neue Freunde zu treffen!', 'Hallo Felix.']
+    },
+    {
+      img: 'assets/img/hamster/hamster-2.jpg',
+      posts: ['Hallo zusammen. Freut mich, dass ihr hier seid.']
+    },
+    {
+      img: 'assets/img/hamster/hamster-3.jpg',
+      posts: ['Hey, ich esse gerne Körner.']
+    },
+    {
+      img: 'assets/img/hamster/hamster-4.jpg',
+      posts: ['Hello, my name is Maya.']
+    }
+  ];
+
+
   constructor() { }
 
+  
   addFriend(name: string, img: string, index: number) {
     let newFriend = {
       name: name,

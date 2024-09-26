@@ -2,11 +2,13 @@
     <img src="{{ post.img }}">
     <div class="like-count"><mat-icon (click)="toggleColor()" [style.color]="heartIsRed ? 'red' : 'black'">favorite</mat-icon></div>
     <div class="text-container">
-        <p>{{ post.text }}</p>
+        @for (singlePost of post.posts; track singlePost) {
+            <p>{{ singlePost }}</p>
+        }
     </div>
     <div class="button-container">
         <button (click)="toggleColor()"><mat-icon>favorite</mat-icon>Like</button>
         <button (click)="openAddComment()"><mat-icon>email</mat-icon>Nachricht</button>
     </div>
-    <app-add-comment [style.display]="showAddComment ? 'unset' : 'none'" (dontShowAddComment)="closeAddComment($event)"></app-add-comment>
+    <app-add-comment [posts]="post.posts" [style.display]="showAddComment ? 'unset' : 'none'" (dontShowAddComment)="closeAddComment($event)"></app-add-comment>
 </div>

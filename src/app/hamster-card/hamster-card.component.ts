@@ -13,8 +13,8 @@ import { AddCommentComponent } from "./add-comment/add-comment.component";
 export class HamsterCardComponent {
   @Input() post: any = 
   {
-    text: 'Hallo, mein Name ist Felix. Ich bin hier, um neue Freunde zu treffen!',
-    img: 'assets/img/hamster/hamster-1.jpg'
+    img: 'assets/img/hamster/hamster-1.jpg',
+    posts: ['Hallo, mein Name ist Felix. Ich bin hier, um neue Freunde zu treffen!', 'Hallo Felix.']
   };
   heartIsRed = false;
   showAddComment = false;

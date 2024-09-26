@@ -1,5 +1,5 @@
 .card {
-  min-height: 550px;
+  height: 550px;
   overflow: hidden;
   position: relative;
   display: flex;
