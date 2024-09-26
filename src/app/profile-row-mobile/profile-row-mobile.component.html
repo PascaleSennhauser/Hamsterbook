@@ -1,0 +1,12 @@
+<div>
+    @if(follow === true) {
+        <div (click)="fs.addFriend(proposal.name, proposal.img, index)">
+            <img src="{{ proposal.img }}">
+            <b>{{ proposal.name }}</b>
+        </div>
+    } @else {
+        <img src="{{ proposal.img }}">
+        <b>{{ proposal.name }}</b>
+    }
+
+</div>

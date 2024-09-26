@@ -1,13 +1,17 @@
 <app-header></app-header>
 
+
 <div class="flexrow">
+  <app-proposal-mobile class="show-mobile"></app-proposal-mobile>
   <div class="container">
     <app-friendbox></app-friendbox>
     @for (singlePost of fs.hamsterPosts; track singlePost) {
-      <app-hamster-card [post]="singlePost"></app-hamster-card>
+    <app-hamster-card [post]="singlePost"></app-hamster-card>
     }
   </div>
-  <app-proposals></app-proposals>
+
+  <app-proposals class="show-desktop"></app-proposals>
+  
 </div>
 
 <app-footer></app-footer>

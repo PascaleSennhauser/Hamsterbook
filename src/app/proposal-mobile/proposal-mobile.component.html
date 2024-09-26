@@ -1,0 +1,15 @@
+<div class="container">
+    <app-profile-row-mobile [proposal]="profile" [follow]="false"></app-profile-row-mobile>
+    <div class="proposal-wrapper">
+        <div class="margin-bottom-16 padding-left-16"><b>Freundesvorschläge</b></div>
+        <div class="proposal-container">
+            @for (singleProposal of pr.proposals; let i = $index; track singleProposal) {
+                @if (i < 3) { <app-profile-row-mobile [proposal]="singleProposal" [index]="i"></app-profile-row-mobile>
+                    }
+                    }
+                @empty {
+                    Du hast im Moment keine Freundesvorschläge.
+                }
+        </div>
+    </div>
+</div>
