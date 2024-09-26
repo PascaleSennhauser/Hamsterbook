@@ -2,7 +2,6 @@
 <div class="margin-bottom-16"><b>Freundesvorschläge</b></div>
 
 @for (singleProposal of pr.proposals; let i = $index; track singleProposal) {
-    @if (i < 3) {
-        <app-profile-row [proposal]="singleProposal" [index]="i"></app-profile-row>
-    }
+    @if (i < 3) { <app-profile-row [proposal]="singleProposal" [index]="i"></app-profile-row>
+        }
 }

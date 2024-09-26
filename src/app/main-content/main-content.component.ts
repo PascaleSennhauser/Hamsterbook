@@ -16,8 +16,4 @@ import { ProposalMobileComponent } from "../proposal-mobile/proposal-mobile.comp
 })
 export class MainContentComponent {
   fs = inject(FriendService);
-
-  buttonClicked() {
-    alert('Hallo, wie geht es dir?');
-  }
 }

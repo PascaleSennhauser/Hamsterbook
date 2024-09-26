@@ -12,7 +12,7 @@ import { ProfileRowMobileComponent } from "../profile-row-mobile/profile-row-mob
 })
 export class ProposalMobileComponent {
   pr = inject(FriendService);
-  profile: any =     {
+  profile: any = {
     name: 'Felix',
     age: '1 Jahr alt',
     img: 'assets/img/hamster/hamster-1.jpg'

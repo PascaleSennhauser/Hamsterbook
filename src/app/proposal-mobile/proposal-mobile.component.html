@@ -6,7 +6,7 @@
             @for (singleProposal of pr.proposals; let i = $index; track singleProposal) {
                 @if (i < 3) { <app-profile-row-mobile [proposal]="singleProposal" [index]="i"></app-profile-row-mobile>
                     }
-                    }
+                }
                 @empty {
                     Du hast im Moment keine Freundesvorschläge.
                 }

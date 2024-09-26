@@ -83,6 +83,12 @@ export class FriendService {
   constructor() { }
 
   
+  /**
+   * This method adds a new friend and deletes the friend from the proposal list.
+   * @param name - The name of the friend.
+   * @param img - The img of the friend.
+   * @param index - The index to delete the selected friend from the proposals.
+   */
   addFriend(name: string, img: string, index: number) {
     let newFriend = {
       name: name,

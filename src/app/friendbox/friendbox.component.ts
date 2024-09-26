@@ -10,5 +10,4 @@ import { FriendService } from '../friend.service';
 })
 export class FriendboxComponent {
   fs = inject(FriendService);
-
 }
