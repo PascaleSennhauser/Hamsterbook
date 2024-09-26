@@ -2,6 +2,8 @@
   min-height: 550px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .card img {
@@ -24,6 +26,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card .text-container {
+  flex: 1;
+  padding-bottom: 32px;
+  overflow-x: auto;
 }
 
 .card p {

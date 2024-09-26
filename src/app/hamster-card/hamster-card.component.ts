@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { AddCommentComponent } from "./add-comment/add-comment.component";
 
 @Component({
   selector: 'app-hamster-card',
   standalone: true,
-  imports: [ MatIconModule, CommonModule ],
+  imports: [MatIconModule, CommonModule, AddCommentComponent],
   templateUrl: './hamster-card.component.html',
   styleUrl: './hamster-card.component.scss'
 })
@@ -16,6 +17,7 @@ export class HamsterCardComponent {
     img: 'assets/img/hamster/hamster-1.jpg'
   };
   heartIsRed = false;
+  showAddComment = false;
 
   toggleColor() {
     if (!this.heartIsRed) {
@@ -23,5 +25,13 @@ export class HamsterCardComponent {
     } else {
       this.heartIsRed = false;
     }
+  }
+
+  openAddComment() {
+    this.showAddComment = true;
+  }
+
+  closeAddComment(event: boolean) {
+    this.showAddComment = event;
   }
 }
