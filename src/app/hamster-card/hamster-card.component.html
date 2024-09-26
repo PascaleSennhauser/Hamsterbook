@@ -1,6 +1,7 @@
 <div class="card standard-card">
     <img src="{{ post.img }}">
+    <div class="like-count"><mat-icon (click)="toggleColor()" [style.color]="heartIsRed ? 'red' : 'black'">favorite</mat-icon></div>
     <p>{{ post.text }}</p>
-    <button><mat-icon>favorite</mat-icon>Like</button>
+    <button (click)="toggleColor()"><mat-icon>favorite</mat-icon>Like</button>
     <button><mat-icon>email</mat-icon>Nachricht</button>
 </div>

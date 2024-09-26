@@ -8,6 +8,23 @@
         width: 100%;
     }
 
+    .like-count {
+        height: 32px;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        mat-icon {
+            height: 32px;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
     p {
         padding-left: 16px;
         padding-right: 16px;
