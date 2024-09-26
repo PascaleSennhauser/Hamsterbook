@@ -1,14 +1,1 @@
-<app-header></app-header>
-
-<div class="flexrow">
-  <div class="container">
-    <app-friendbox></app-friendbox>
-    @for (singlePost of hamsterPosts; track singlePost) {
-      <app-hamster-card [post]="singlePost"></app-hamster-card>
-    }
-  </div>
-  <app-proposals></app-proposals>
-</div>
-
-
 <router-outlet></router-outlet>

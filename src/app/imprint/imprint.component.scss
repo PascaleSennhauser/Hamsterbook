@@ -1,0 +1,65 @@
+.container {
+    font-size: 14px;
+    padding: 32px;
+    box-sizing: border-box;
+
+    .back-arrow {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        mat-icon {
+            height: 40px;
+            font-size: 30px;
+        }
+    }
+
+    .mail-address {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    li {
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .privacy-policy-container {
+        margin-top: 32px;
+
+        .seal {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+}

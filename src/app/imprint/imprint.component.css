@@ -1,0 +1,65 @@
+.container {
+  font-size: 14px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.container .back-arrow {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container .back-arrow mat-icon {
+  height: 40px;
+  font-size: 30px;
+}
+
+.container .mail-address {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.container .mail-address:hover {
+  text-decoration: underline;
+}
+
+.container li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.container li a:hover {
+  text-decoration: underline;
+}
+
+.container .privacy-policy-container {
+  margin-top: 32px;
+}
+
+.container .privacy-policy-container .seal {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .privacy-policy-container .seal a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container .privacy-policy-container .seal a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
