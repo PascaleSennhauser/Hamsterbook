@@ -25,11 +25,7 @@ export class HamsterCardComponent {
    * It's red, when the post gets a like or black, when there is no like.
    */
   toggleColor() {
-    if (!this.heartIsRed) {
-      this.heartIsRed = true;
-    } else {
-      this.heartIsRed = false;
-    }
+    this.heartIsRed = !this.heartIsRed;
   }
 
 

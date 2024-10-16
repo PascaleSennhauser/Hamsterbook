@@ -1,7 +1,6 @@
 import { Component, EventEmitter, Output, inject, Input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, NgForm } from '@angular/forms';
-import { FriendService } from '../../friend.service';
 
 @Component({
   selector: 'app-add-comment',
@@ -11,7 +10,6 @@ import { FriendService } from '../../friend.service';
   styleUrl: './add-comment.component.scss'
 })
 export class AddCommentComponent {
-  fs = inject(FriendService);
   @Output() dontShowAddComment = new EventEmitter<false>;
   @Input() posts: string[] = [];
   comment: string = '';
